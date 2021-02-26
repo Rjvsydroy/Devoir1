@@ -27,3 +27,5 @@ un président, un vice-président, et secrétaire (juste leurs noms). Une entrep
 plus un conseil administrateurs (mais il n'en a pas besoin). Tout les conseils d'administration
 doivent avoir une et une seule entreprise à gérer.
 
+![Diagram3]()
+
