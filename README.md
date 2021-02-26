@@ -19,3 +19,5 @@ Une section de cours est défini uniquement par le nom de la section (par exempl
 semestre (par exemple hiver), l'année et le cours lui-même. Une section de cours dépend sur le
 cours.
 
+![Diagram2](https://github.com/Rjvsydroy/Devoir1/blob/main/diagram2.png?raw=true)
+
