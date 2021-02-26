@@ -21,3 +21,9 @@ cours.
 
 ![Diagram2](https://github.com/Rjvsydroy/Devoir1/blob/main/diagram2.png?raw=true)
 
+c) [5 points]
+Une entreprise a un nom et un quartier général (spécifié par pays). Un conseil d'administration a
+un président, un vice-président, et secrétaire (juste leurs noms). Une entreprise peut avoir au
+plus un conseil administrateurs (mais il n'en a pas besoin). Tout les conseils d'administration
+doivent avoir une et une seule entreprise à gérer.
+
