@@ -29,3 +29,27 @@ doivent avoir une et une seule entreprise à gérer.
 
 ![Diagram3](https://github.com/Rjvsydroy/Devoir1/blob/main/diagram3.png)
 
+### A2 [30 points]: Conception du système
+
+On vous demande de concevoir une base de données (à l'aide d'un diagramme relationnel)
+CorporateBnB, une entreprise qui permet à toutes les personnes ayant un bureau à domicile de
+fournir des espaces de réunion à d'autres. Tous les utilisateurs peut s'inscrire à ce service en
+fournissant leur nom, email et numéro de téléphone. Un utilisateur peut gérer un espace de
+bureau, ou peut louer un espace de bureau. Un bureau a un nom, une adresse et une superficie
+totale (en pieds carrés). Chaque bureau a la disponibilité pour quand il peut être loué. La
+disponibilité stocke la date et le coût quotidien pour l'utilisation, les heures d'arrivée et de départ
+et si cette date est toujours disponible. Lorsqu'un utilisateur loue une propriété, on stock la date
+d'arrivée et la date de départ.
+
+Modélisez le système ci-dessus à l'aide d'un diagramme Entité-Relation. Vous devez inclure les
+entités, les relations, la cardinalité, la participation et les attributs. Vous n'avez pas besoin de
+spécifier les types d'attributs (c'est-à-dire le domaine).
+
+### A3 [15 points]: Algèbre relationnelle
+
+Écrivez des requêtes à l'aide de l'algèbre relationnelle pour les situations suivantes.
+a) [7 points] Trouvez tous les espaces de bureau à Ottawa qui sont disponibles le 2 mars 2020.
+
+b) [8 points] Trouvez tous les utilisateurs (nom et email) et les détails de la propriété (nom et
+ville) et les informations de location (date et coût quotidien) de toutes les bureaux loués du mois
+de janvier 2020.
