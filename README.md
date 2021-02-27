@@ -60,3 +60,51 @@ ville) et les informations de location (date et coût quotidien) de toutes les b
 de janvier 2020.
 
 ![AR2](https://github.com/Rjvsydroy/Devoir1/blob/main/algebreRelationnelle2.png)
+
+## Partie B [60 points]: SQL
+
+### B1. [15 points] Lecture de requêtes SQL
+
+Pour chacun des requêtes suivants, affichez la sortie de la requête OU (brièvement) expliquez
+pourquoi la requête s'exécute pas et réécrivez afin qu'elle puisse être exécutée.
+
+a) [4 points]
+
+```sql
+SELECT
+ name,
+ EXTRACT(year from age(users.join_date)) AS experience
+FROM users
+JOIN licenses ON licenses.user_id = users.id
+WHERE licenses.software_name = 'MS Word'
+ORDER BY users.name;
+```
+
+b) [4 points]
+
+```sql 
+SELECT name,
+ released_date
+FROM softwares
+WHERE released_date < '2018-01-01'
+ORDER BY released_date ASC;
+```
+c) [7 points]
+
+```sql
+WITH users_2019 (id, name) AS
+ (SELECT *
+ FROM users
+ WHERE join_date BETWEEN '2019-01-01' AND '2019-12-31')
+SELECT id,
+ name,
+ count(licenses.access_code) AS num
+FROM users_2019
+LEFT JOIN licenses ON licenses.user_id = id
+GROUP BY name
+ORDER BY num DESC;
+```
+
+
+
+
