@@ -50,6 +50,7 @@ spécifier les types d'attributs (c'est-à-dire le domaine).
 ### A3 [15 points]: Algèbre relationnelle
 
 Écrivez des requêtes à l'aide de l'algèbre relationnelle pour les situations suivantes.
+
 a) [7 points] Trouvez tous les espaces de bureau à Ottawa qui sont disponibles le 2 mars 2020.
 
 b) [8 points] Trouvez tous les utilisateurs (nom et email) et les détails de la propriété (nom et
