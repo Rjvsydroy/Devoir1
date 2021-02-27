@@ -132,6 +132,19 @@ Sortie:
 ![SB1cCorrection](https://github.com/Rjvsydroy/Devoir1/blob/main/B1cSolution.png?raw=true)
 
 
+### B2. [15 points] Écriture de requêtes SQL
+
+a) [3 points] Trouvez les noms de tous les utilisateurs qui se sont inscrits avant le 1er janvier 2020
+
+```sql
+SELECT name FROM users WHERE join_date<'2020-01-01';
+```
+
+Sortie:
+
+
+
+
 
 
 
