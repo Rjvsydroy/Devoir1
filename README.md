@@ -92,6 +92,10 @@ FROM softwares
 WHERE released_date < '2018-01-01'
 ORDER BY released_date ASC;
 ```
+
+Sortie:
+
+![SB1b](https://github.com/Rjvsydroy/Devoir1/blob/main/B1b.png)
 c) [7 points]
 
 ```sql
@@ -107,7 +111,9 @@ LEFT JOIN licenses ON licenses.user_id = id
 GROUP BY name
 ORDER BY num DESC;
 ```
+Sortie:
 
+![SB1c]()
 
 
 
