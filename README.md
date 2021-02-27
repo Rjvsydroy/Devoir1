@@ -96,6 +96,7 @@ ORDER BY released_date ASC;
 Sortie:
 
 ![SB1b](https://github.com/Rjvsydroy/Devoir1/blob/main/B1b.png)
+
 c) [7 points]
 
 ```sql
@@ -113,7 +114,7 @@ ORDER BY num DESC;
 ```
 Sortie:
 
-![SB1c]()
+![SB1c](https://github.com/Rjvsydroy/Devoir1/blob/main/B1c.png)
 
 
 
