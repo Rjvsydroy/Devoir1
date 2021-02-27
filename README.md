@@ -53,6 +53,8 @@ spécifier les types d'attributs (c'est-à-dire le domaine).
 
 a) [7 points] Trouvez tous les espaces de bureau à Ottawa qui sont disponibles le 2 mars 2020.
 
+![AR1](https://github.com/Rjvsydroy/Devoir1/blob/main/algebreRelationnelle1.png)
+
 b) [8 points] Trouvez tous les utilisateurs (nom et email) et les détails de la propriété (nom et
 ville) et les informations de location (date et coût quotidien) de toutes les bureaux loués du mois
 de janvier 2020.
