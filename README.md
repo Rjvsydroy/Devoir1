@@ -204,6 +204,19 @@ Sortie:
 
 a) [5 points] Ajoutez la version du logiciel à la table des licences.
 
+```sql
+BEGIN;
+ALTER TABLE licenses 
+ADD COLUMN software_version varchar(25);
+UPDATE licenses
+SET software_version = software.version
+FROM softwares as software
+WHERE licenses.software_name = software.name;
+COMMIT;
+```
+
+![B3a](https://github.com/Rjvsydroy/Devoir1/blob/main/B3aSortie.png)
+
 
 b) [5 points] Mettez à jour la table des softwares pour inclure le nom ET la version comme clé primaire.
 
