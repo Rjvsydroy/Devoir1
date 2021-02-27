@@ -58,3 +58,5 @@ a) [7 points] Trouvez tous les espaces de bureau à Ottawa qui sont disponibles 
 b) [8 points] Trouvez tous les utilisateurs (nom et email) et les détails de la propriété (nom et
 ville) et les informations de location (date et coût quotidien) de toutes les bureaux loués du mois
 de janvier 2020.
+
+![AR2](![image](https://user-images.githubusercontent.com/43187552/109396309-decdfd00-78fe-11eb-97cb-88242a94fd26.png)
