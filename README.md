@@ -155,12 +155,58 @@ ORDER BY number_of_licenses desc, name asc;
 
 Sortie:
 
-https://github.com/Rjvsydroy/Devoir1/blob/main/B2bSortie.png
+![B2b](https://github.com/Rjvsydroy/Devoir1/blob/main/B2bSortie.png)
+
+c) [5 points] Insérez des données dans la base de données pour démontrer que les résultats sont triés correctement en (b).
+
+```sql
+
+INSERT INTO users (id, name, join_date)
+VALUES
+ (52, 'tom', '2020-01-01'),
+ (53, 'jerry', '2020-01-02'),
+ (54, 'jack', '2021-01-02'),
+ (55, 'rose', '2021-01-01');
+
+INSERT INTO softwares (name, version, released_date)
+VALUES
+ ('XAMPP', '11', '2010-01-20'),
+ ('Explorer', 'v2', '2015-01-01'),
+ ('Intellij', '15.2', '2018-06-15');
+
+INSERT INTO licenses (user_id, software_name, access_code)
+VALUES
+ (52, 'XAMPP, 'ROOT'),
+ (53, 'XAMPP', 'pass007'),
+ (54, 'XAMP', 'jack210102'),
+ (52, 'Intellij', '1234567654321'),
+ (55, 'Intellij', '?ada!12');
+```
+
+Sortie:
+
+![B2c](https://github.com/Rjvsydroy/Devoir1/blob/main/B2cSortie.png)
+
+d) [2 points] Mettez à jour la version de sketch à la version « 51 » (publié le 1 janvier 2020).
+
+```sql
+UPDATE softwares
+SET version = '51',
+released_date ='2020-01-01'
+WHERE name = 'Sketch';
+```
+
+Sortie:
+
+![B2d](https://github.com/Rjvsydroy/Devoir1/blob/main/B2dSortie.png)
+
+### B3. [30 marks] Mise à jour du schéma SQL
+
+a) [5 points] Ajoutez la version du logiciel à la table des licences.
 
 
+b) [5 points] Mettez à jour la table des softwares pour inclure le nom ET la version comme clé primaire.
 
+c) [10 points] Mettez à jour le tableau des licences pour permettre aux utilisateurs d'avoir plusieurs versions du même logiciel. Pour démontrer cela, ajoutez Sketch 52 à l'utilisateur "andrew" avec le code d'accès "xxxyyy111". Ne codez pas directement avec l'ID de utilisateur, cela devrait fonctionner pour n'importe quelle instances de la base de données avec un utilisateur nommé "andrew".
 
-
-
-
-
+d) [10 points] Sketch propose une promotion (code d'accès "1monthfree") pour la version 52. Donnez cette licence à tous ceux qui ne l'ont pas encore, leur permettant de conserver toute ancienne version qu'ils pourraient avoir. Ne codez pas directement la liste des utilisateurs, cela devrait fonctionner pour n'importe quelle instances de la base de données.
