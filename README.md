@@ -176,7 +176,7 @@ VALUES
 
 INSERT INTO licenses (user_id, software_name, access_code)
 VALUES
- (52, 'XAMPP, 'ROOT'),
+ (52, 'XAMPP', 'ROOT'),
  (53, 'XAMPP', 'pass007'),
  (54, 'XAMP', 'jack210102'),
  (52, 'Intellij', '1234567654321'),
