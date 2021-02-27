@@ -142,6 +142,8 @@ SELECT name FROM users WHERE join_date<'2020-01-01';
 
 Sortie:
 
+![B2a](https://github.com/Rjvsydroy/Devoir1/blob/main/B2Sortie.png)
+
 
 
 
