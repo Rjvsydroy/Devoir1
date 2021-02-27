@@ -117,6 +117,7 @@ Sortie:
 ![SB1c](https://github.com/Rjvsydroy/Devoir1/blob/main/B1c.png)
 
 Correction: Ajout de 'users_2019.id' dans la clause GROUP BY
+
 ```sql
 WITH users_2019 (id, name) AS (SELECT * FROM users WHERE join_date BETWEEN '2019-01-01' AND '2019-12-31')
 SELECT id, name, count(licenses.access_code) AS num
@@ -124,10 +125,11 @@ FROM users_2019
 LEFT JOIN licenses ON licenses.user_id = id
 GROUP BY name, users_2019.id
 ORDER BY num DESC;
+```
 
 Sortie:
 
-![SB1cCorrection](https://github.com/Rjvsydroy/Devoir1/blob/main/B1cSolution.png?raw=true
+![SB1cCorrection](https://github.com/Rjvsydroy/Devoir1/blob/main/B1cSolution.png?raw=true)
 
 
 
