@@ -144,6 +144,20 @@ Sortie:
 
 ![B2a](https://github.com/Rjvsydroy/Devoir1/blob/main/B2Sortie.png)
 
+b) [5 points] Trouvez le nombre de licences logicielles de chaque utilisateur (même celles sans licence). Triez les résultats par nombre de licences (du plus au moins), puis par nom (A - Z).
+
+```sql
+SELECT users.name, count(licenses.user_id) AS number_of_licenses FROM users
+LEFT JOIN licenses on licenses.user_id = users.id
+GROUP BY users.name
+ORDER BY number_of_licenses desc, name asc;
+```
+
+Sortie:
+
+https://github.com/Rjvsydroy/Devoir1/blob/main/B2bSortie.png
+
+
 
 
 
