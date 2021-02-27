@@ -79,6 +79,8 @@ JOIN licenses ON licenses.user_id = users.id
 WHERE licenses.software_name = 'MS Word'
 ORDER BY users.name;
 ```
+Sortie:
+![SB1](https://github.com/Rjvsydroy/Devoir1/blob/main/B1a.png)
 
 b) [4 points]
 
