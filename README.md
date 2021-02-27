@@ -125,5 +125,11 @@ LEFT JOIN licenses ON licenses.user_id = id
 GROUP BY name, users_2019.id
 ORDER BY num DESC;
 
+Sortie:
+
+![SB1cCorrection](https://github.com/Rjvsydroy/Devoir1/blob/main/B1cSolution.png?raw=true
+
+
+
 
 
