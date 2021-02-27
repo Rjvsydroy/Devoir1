@@ -220,6 +220,38 @@ COMMIT;
 
 b) [5 points] Mettez à jour la table des softwares pour inclure le nom ET la version comme clé primaire.
 
+```sql
+BEGIN;
+ALTER TABLE softwares DROP CONSTRAINT softwares_pkey;
+ALTER TABLE softwares ADD PRIMARY KEY (name, version);
+COMMIT;
+```
+
 c) [10 points] Mettez à jour le tableau des licences pour permettre aux utilisateurs d'avoir plusieurs versions du même logiciel. Pour démontrer cela, ajoutez Sketch 52 à l'utilisateur "andrew" avec le code d'accès "xxxyyy111". Ne codez pas directement avec l'ID de utilisateur, cela devrait fonctionner pour n'importe quelle instances de la base de données avec un utilisateur nommé "andrew".
+
+```sql
+BEGIN;
+ALTER TABLE licenses
+DROP CONSTRAINT licenses_user_id_fkey;
+ALTER TABLE licenses
+DROP CONSTRAINT licenses_pkey;
+ALTER TABLE licenses
+ADD PRIMARY KEY (user_id,software_name,software_version);
+ALTER TABLE licenses
+ADD FOREIGN KEY (user_id) REFERENCES users;
+ALTER TABLE licenses
+ADD FOREIGN KEY (software_name,software_version) REFERENCES softwares;
+COMMIT;
+
+INSERT INTO licenses (user_id, software_name,software_version,access_code)
+SELECT id,'Sketch','52','xxxyyy111'
+FROM users
+WHERE users.name='andrew';
+```
+
+Sortie:
+
+
+
 
 d) [10 points] Sketch propose une promotion (code d'accès "1monthfree") pour la version 52. Donnez cette licence à tous ceux qui ne l'ont pas encore, leur permettant de conserver toute ancienne version qu'ils pourraient avoir. Ne codez pas directement la liste des utilisateurs, cela devrait fonctionner pour n'importe quelle instances de la base de données.
