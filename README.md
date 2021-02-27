@@ -251,7 +251,7 @@ WHERE users.name='andrew';
 
 Sortie:
 
-
+![image](https://user-images.githubusercontent.com/43187552/109401933-bc98a700-791f-11eb-8249-05e3048be03a.png)
 
 
 d) [10 points] Sketch propose une promotion (code d'accès "1monthfree") pour la version 52. Donnez cette licence à tous ceux qui ne l'ont pas encore, leur permettant de conserver toute ancienne version qu'ils pourraient avoir. Ne codez pas directement la liste des utilisateurs, cela devrait fonctionner pour n'importe quelle instances de la base de données.
